@@ -8,3 +8,8 @@ meteor-platform
 autopublish
 insecure
 iron:router
+twbs:bootstrap
+accounts-password
+accounts-github
+ian:accounts-ui-bootstrap-3
+bojicas:bootstrap-alerts
