@@ -10,7 +10,7 @@ Template.Home.helpers({
     var time = this.time;
 
     var timeInt = Math.floor(this.time / 100);
-    var timeDec = this.time % 100;
+    var timeDec = this.time % 100 || '00';
 
     return (timeInt + '.' + timeDec);
   },
