@@ -50,9 +50,14 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-12 col-sm-9 pull-right well" style="margin-top: 20px; background-color: white; border-radius: 10px;">
+
+    <!-- empty div for the first task margin-top -->
+    <div style="margin-top: 20px;"></div>
+
+    {{#each tasks}}
+      <div class="col-xs-12 col-sm-9 pull-right well" style="background-color: white; border-radius: 10px;">
         <div class="col-xs-10">
-          <div class="lead">A very interesting coding task</div>
+          <div class="lead">{{description}}</div>
           <div style="margin-top: -20px;">
             <a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a> Project (Client),
             <a href="#"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a> Task (billable)
@@ -65,6 +70,7 @@
           </div>
         </div>
       </div>
+    {{/each}}
 
       <div class="col-xs-12 col-sm-9 pull-right well" style="background-color: white; border-radius: 10px;">
         <div class="col-xs-10">
