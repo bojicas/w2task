@@ -3,3 +3,8 @@
  *  this.ready();
  * });
  */
+
+
+Meteor.publish('tasks', function (/* args */) {
+  return Tasks.find();
+});
