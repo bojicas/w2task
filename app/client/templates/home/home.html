@@ -51,58 +51,26 @@
 
     <div class="row">
 
-    <!-- empty div for the first task margin-top -->
-    <div style="margin-top: 20px;"></div>
+      <div class="spacer"></div>
 
-    {{#each tasks}}
-      <div class="col-xs-12 col-sm-9 pull-right well" style="background-color: white; border-radius: 10px;">
-        <div class="col-xs-10">
-          <div class="lead">{{description}}</div>
-          <div style="margin-top: -20px;">
-            <a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a> Project (Client),
-            <a href="#"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a> Task (billable)
+      {{#each tasks}}
+        <div class="col-xs-12 col-sm-9 pull-right well task-well">
+          <div class="col-xs-10">
+            <div class="lead">{{description}}</div>
+            <div class="task-second-line">
+              <a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a> Project (Client),
+              <a href="#"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a> Task (billable)
+            </div>
+          </div>
+          <div class="col-xs-2 text-right">
+            <div class="lead">0.00h</div>
+            <div class="task-second-line">
+              <a href="#"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start</a>
+            </div>
           </div>
         </div>
-        <div class="col-xs-2 text-right">
-          <div class="lead">0.00h</div>
-          <div style="margin-top: -20px;">
-            <a href="#"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start</a>
-          </div>
-        </div>
-      </div>
-    {{/each}}
+      {{/each}}
 
-      <div class="col-xs-12 col-sm-9 pull-right well" style="background-color: white; border-radius: 10px;">
-        <div class="col-xs-10">
-          <div class="lead">Another interesting design task</div>
-          <div style="margin-top: -20px;">
-            <a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a> Project (Client),
-            <a href="#"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a> Task (billable)
-          </div>
-        </div>
-        <div class="col-xs-2 text-right">
-          <div class="lead text-danger">0.20h</div>
-          <div style="margin-top: -20px;">
-            <a href="#" class="text-danger"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-9 pull-right well" style="background-color: white; border-radius: 10px;">
-        <div class="col-xs-10">
-          <div class="lead">Yet another interesting administration task</div>
-          <div style="margin-top: -20px;">
-            <a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a> Project (Client),
-            <a href="#"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a> Task (billable)
-          </div>
-        </div>
-        <div class="col-xs-2 text-right">
-          <div class="lead">0.00h</div>
-          <div style="margin-top: -20px;">
-            <a href="#"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start</a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
