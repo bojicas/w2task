@@ -13,5 +13,13 @@ Template.Home.helpers({
     var timeDec = this.time % 100;
 
     return (timeInt + '.' + timeDec);
+  },
+
+  statusButton: function () {
+    if (this.running) {
+      return '<span class="glyphicon glyphicon-pause text-danger" aria-hidden="true"></span> <span class="text-danger">Stop</span>'
+    } else {
+      return '<span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start'
+    }
   }
 });
